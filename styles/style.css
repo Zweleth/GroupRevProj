@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: #222;
+    color: white;
+}
+
+form {
+    align-self: center;
+    border: 2px solid aqua;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 20%;
+    height: fit-content;
+
+}
+form section {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+section input {
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+
+h2 {
+    align-self: center;
+}
+
+h2::after {
+    content: '!';
+}
+
+button {
+    align-self: center;
+    width: 60%;
+    height:30px;
+    background: none;
+    border-radius: 10px;
+    border: 2px solid gray;
+    color : gray
+}
+
+/*Using hover on button to change its own properties*/
+button:hover {
+    border-color: aqua;
+    color: aqua;
+}
+
+/*Using active on button to change its size*/
+button:active {
+    width: 50%;
+    height: 28px;
+}
+
+/*Using focus pseudo class to remove outline from input element*/
+section input:focus {
+    outline: none;
+}
+
+/*Using the hover pseudo class on section(parent) to change the input element's(child) properties*/
+section:hover input{
+    border-color: aqua;
+
+
+}
+
+section:hover p {
+    color: aqua;
+}
+
